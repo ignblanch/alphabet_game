@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Alphabet Star Wars</title>
+
+		<!-- STYLES -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<header id="main_header">Alphabet Star Wars
+			<div id="welcome">Player: <span id="js_user"></span></div>
+			</header>
+			<div id="top">
+			<div id="wheel">
+				<div id="parent">
+					<div class= "letter" id="_0"><span id="js0">A</span></div>
+					<div class= "letter" id="_1"><span id="js1">B</span></div>
+					<div class= "letter" id="_2"><span id="js2">C</span></div>
+					<div class= "letter" id="_3"><span id="js3">D</span></div>
+					<div class= "letter" id="_4"><span id="js4">E</span></div>
+					<div class= "letter" id="_5"><span id="js5">F</span></div>
+					<div class= "letter" id="_6"><span id="js6">G</span></div>
+					<div class= "letter" id="_7"><span id="js7">H</span></div>
+					<div class= "letter" id="_8"><span id="js8">I</span></div>
+					<div class= "letter" id="_9"><span id="js9">J</span></div>
+					<div class= "letter" id="_10"><span id="js10">K</span></div>
+					<div class= "letter" id="_11"><span id="js11">L</span></div>
+					<div class= "letter" id="_12"><span id="js12">M</span></div>
+					<div class= "letter" id="_13"><span id="js13">N</span></div>
+					<div class= "letter" id="_14"><span id="js14">O</span></div>
+					<div class= "letter" id="_15"><span id="js15">P</span></div>
+					<div class= "letter" id="_16"><span id="js16">Q</span></div>
+					<div class= "letter" id="_17"><span id="js17">R</span></div>
+					<div class= "letter" id="_18"><span id="js18">S</span></div>
+					<div class= "letter" id="_19"><span id="js19">T</span></div>
+					<div class= "letter" id="_20"><span id="js20">U</span></div>
+					<div class= "letter" id="_21"><span id="js21">V</span></div>
+					<div class= "letter" id="_22"><span id="js22">W</span></div>
+					<div class= "letter" id="_23"><span id="js23">X</span></div>
+					<div class= "letter" id="_24"><span id="js24">Y</span></div>
+					<div class= "letter" id="_25"><span id="js25">Z</span></div>
+				</div>
+			</div>
+			<div id="scores">
+				<p>Answered: <span id='js_answered'></span></p>
+				<p>Score: <span id='js_score'></span></p>
+				<p>Errors: <span id='js_error'></span></p>
+				<p>Left: <span id='js_left'></span></p>
+				<p>Time:<br> <span id='js_time'></span></p>
+				
+			</div>
+			</div>
+			<div id="question_container">
+				<p id="question"><span id="js_question"></span></p>
+					<input type="text" placeholder="Your answer" id="js_answer"><br>
+					<button id="answerButton">ANSWER</button>
+					<button id="pasaButton">SKIP IT</button>
+					<button id="endButton">QUIT</button>
+				
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div id="endModal" class="modal">
+
+		  	<!-- Modal content -->
+		  	<div class="modal-content">
+		    	<span class="close">&times;</span>
+		    	
+				<header id="modal_header">
+					game over
+					<div id="summary"></div>
+				</header>
+				<br><p id="top_title">TOP 5 SCORERS</p>
+				<ul id="rank">
+				</ul>
+				<form action="index.html" method="POST">
+		   		<button type="submit">PLAY AGAIN</button>
+				</form>
+				
+		  	</div>
+		</div>
+
+		<!-- SCRIPTS -->
+		<script src="app/data.js"></script>
+		<script src="app/app.js"></script>
+		
+	</body>
+</html>
